@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Muslim Designs</title>
+
+<!-- Premium Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffffff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:'Inter', sans-serif;
+}
+
+/* Main Container */
+.contact-container{
+    width:100%;
+    max-width:900px;
+    display:flex;
+    flex-wrap:wrap;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
+    border:2px solid #ecba44;
+}
+
+/* LEFT SIDE */
+.contact-info{
+    flex:1;
+    padding:45px;
+    background:linear-gradient(135deg,#ecba44,#4d3600);
+    color:#fff;
+}
+
+.contact-info h2{
+    font-family:'Playfair Display', serif;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.contact-info p{
+    font-size:14px;
+    line-height:1.6;
+    opacity:0.9;
+    margin-bottom:25px;
+}
+
+.info-box div{
+    margin-bottom:12px;
+    font-size:14px;
+}
+
+/* Instagram */
+.socials{
+    margin-top:25px;
+}
+
+.socials a{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.5);
+    transition:0.3s;
+}
+
+.socials a:hover{
+    background:#fff;
+    color:#4d3600;
+}
+
+/* RIGHT SIDE */
+.contact-form{
+    flex:1;
+    background:#fff;
+    padding:45px;
+}
+
+.contact-form h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    color:#4d3600;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin-bottom:14px;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:14px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    border-color:#ecba44;
+    box-shadow:0 0 8px rgba(236,186,68,0.35);
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#ecba44,#4d3600);
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+        <h2>Contact Me</h2>
+
+        <p>
+            Let’s work together and create modern, creative and professional designs for your brand.
+        </p>
+
+        <div class="info-box">
+            <div>India</div>
+            <div>shaikhsubhaan37@gmail.com</div>
+            <div>+91 6301821924</div>
+        </div>
+
+        <div class="socials">
+            <a href="https://instagram.com/muslim.desigs" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="contact-form">
+        <h2>Send Message</h2>
+
+        <!-- FORM SUBMIT (WORKING EMAIL RECEIVER) -->
+        <form action="https://formsubmit.co/shaikhsubhaan37@gmail.com" method="POST">
+
+            <!-- disables captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- optional thank you redirect -->
+            <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+
+            <div class="input-box">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

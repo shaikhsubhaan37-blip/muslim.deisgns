@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+:root{
+    --primary:#ecba44;
+    --secondary:#4d3600;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+}
+
+/* Section */
+.portfolio{
+    padding:80px 10%;
+    text-align:center;
+}
+
+/* Title */
+.portfolio h2{
+    font-size:3rem;
+    color:var(--secondary);
+    margin-bottom:10px;
+}
+
+/* Subtitle */
+.portfolio p{
+    color:#666;
+    margin-bottom:50px;
+}
+
+/* Grid */
+.portfolio-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+/* Image box */
+.portfolio-item{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    border:2px solid #f1f1f1;
+}
+
+/* Images */
+.portfolio-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.4s ease;
+}
+
+/* Hover effect */
+.portfolio-item img:hover{
+    transform:scale(1.1);
+}
+
+/* Optional label */
+.label{
+    padding:10px;
+    background:var(--primary);
+    color:var(--secondary);
+    font-weight:bold;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="portfolio">
+
+    <h2>My Portfolio</h2>
+    <p>Some of my best graphic design and web design works</p>
+
+    <div class="portfolio-grid">
+
+        <!-- IMAGE 1 -->
+        <div class="portfolio-item">
+            <img src="port1 (1).jpg" alt="Project 1">
+            <div class="label">Project 1</div>
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="portfolio-item">
+            <img src="port1 (2).jpg" alt="Project 2">
+            <div class="label">Project 2</div>
+        </div>
+
+        <!-- IMAGE 3 -->
+        <div class="portfolio-item">
+            <img src="portt.jpg" alt="Project 3">
+            <div class="label">Project 3</div>
+        </div>
+
+        <!-- IMAGE 4 -->
+        <div class="portfolio-item">
+            <img src="porttt.jpg" alt="Project 4">
+            <div class="label">Project 4</div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
